@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Задание 3</title>
+        <meta charset="utf-8">
+        <link href="style3.css" rel="stylesheet">
+    </head>
+    <body>
+        <script>
+            let a = prompt("Введите а.")
+            let b = prompt("Введите b.")
+        </script>
+    <script>
+    document.write("<table>")
+        document.write("<th>Радиус</th><th>Площадь круга</th><th>Длина окружности</th>")        
+        do {
+            document.write("<tr><td>"+a+"</td><td>"+ (Math.PI*a**2).toFixed(3) +"</td><td>"+ (2*Math.PI*a).toFixed(3) +"</td></tr>");
+            a=(Number(a)+0.3).toFixed(3) ;
+        }
+           while(Number(a)<=Number(b))
+    document.write("</table>")
+    </script>
+    </body>
+</html>

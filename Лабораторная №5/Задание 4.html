@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Задание 4</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style4.css">
+    </head>
+    <body>
+        <table>
+            <tr><th>Предмет</th><th>Оценка 1</th><th>Оценка 2</th><th>Средний балл</th></tr>
+            <tr><td>Скриптовые языки программирования</td><td id="mark1">9</td><td id="mark2">8</td><td id="result1"></td></tr>
+            <tr><td>КЯРД</td><td id="mark3">8</td><td id="mark4">9</td><td id="result2"></td></tr>
+            <tr><td>АЛОЦВМ</td><td id="mark5">3</td><td id="mark6">7</td><td id="result3"></td></tr>
+        </table>
+        <script>
+            let mark1 = document.getElementById("mark1").innerText;
+            let mark2 = document.getElementById("mark2").innerText;
+            let mark3 = document.getElementById("mark3").innerText;
+            let mark4 = document.getElementById("mark4").innerText;
+            let mark5 = document.getElementById("mark5").innerText;
+            let mark6 = document.getElementById("mark6").innerText;  
+            let result1 = (+mark1 + +mark2)/2;
+            let result2 = (+mark3 + +mark4)/2;
+            let result3 = (+mark5 + +mark6)/2;
+            document.getElementById("result1").innerText = result1;
+            document.getElementById("result2").innerText = result2;
+            document.getElementById("result3").innerText = result3;
+        
+        
+            
+
+        </script>
+    </body>
+</html>

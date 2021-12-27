@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Задание 2</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+            function Student(Name, Surname, Phys, MAth, Info) {
+                this.Name = Name;
+                this.Surname = Surname;
+                this.Phys = Phys;
+                this.MAth = MAth;
+                this.Info = Info;      
+                Student.prototype.TypeOfEd=this.TypeOfEd;
+                this.Result = function Result() {
+                    this.Mark = (Phys + MAth + Info)/3;
+                    document.write(this.Name +" "+ this.Surname + " Средний балл: " + this.Mark +" "+ this.TypeOfEd +"<br/>");
+                } 
+            }  
+            stud1 = new Student("Анатолий", "Поборцев", 8, 9, 10);
+            stud2 = new Student("Алексей", "Леонец", 7, 10, 10);
+            stud3 = new Student("Семён", "Натынчик", 9, 8, 9);
+            stud1.TypeOfEd = "Бюджет";
+            stud2.TypeOfEd = "Платное";
+            stud3.TypeOfEd = "Бюджет";
+            stud1.Result();
+            stud2.Result();
+            stud3.Result();
+        </script>
+    </body>
+</html>

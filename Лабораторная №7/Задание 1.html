@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>Задание 1</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style1.css">
+    </head>
+    <body>
+        <form name="data">
+            <label for="Faculty" id="facultyLabel">Факультет</label><br/>
+            <textarea name="Faculty" placeholder="Факультет"></textarea>
+            <br/>
+            <label for="Name">Имя</label>
+            <input type="text" name="Name" placeholder="Имя"/>
+            <label for="Surname">Фамилия</label>
+            <input type="text" name="Surname" placeholder="Фамилия"/>
+            <label for="Specialty">Специальность</label>
+            <select name="Specialty">
+                <option value="ИСиТ">ИСиТ</option>
+                <option value="ПОИТ">ПОИТ</option>
+                <option value="ПОиБМС">ПОиБМС</option>
+                <option value="ДЭиВИ">ДЭиВИ</option>
+            </select>
+            <br/>
+            <label for="Course">Курс</label>
+            <div>
+            <input type="radio" name="Course" value="1"/>1
+            <input type="radio" name="Course" value="2"/>2
+            <input type="radio" name="Course" value="3"/>3
+            <input type="radio" name="Course" value="4"/>4
+            </div>
+            <label for="Disciplines">Предметы</label>
+            <div>
+                <input type="checkbox" value="ОИТ" name="Disciplines"/>ОИТ
+                <input type="checkbox" value="ОАП" name="Disciplines"/>ОАП
+                <input type="checkbox" value="История" name="Disciplines"/>История
+                <input type="checkbox" value="Физика" name="Disciplines"/>Физика
+                <input type="checkbox" value="Математика" name="Disciplines"/>Математика
+            </div>
+            <div>
+                <input type="submit"/>
+                <input type="reset"/>
+                <input type="button" value="Напечатать" onclick="report()" id="printButton"/>
+            </div>
+        </form>
+        <div id="OutputWindow">
+            
+        </div>
+        <div id="subjList">
+
+        </div>
+        <script src="script1.js"></script>
+    </body>
+</html>

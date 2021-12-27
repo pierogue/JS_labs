@@ -1,0 +1,14 @@
+table {
+    background-color: hotpink;
+    border: black solid 2px;
+}
+
+tr td {
+    border:black solid 2px;
+    margin: 0px;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}

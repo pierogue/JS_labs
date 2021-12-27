@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Задание 3</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+                function Gruppa(n, spec, kolich) {
+                this.n = n;
+                this.spec = spec;
+                this.kolich = kolich;
+                this.add_stud=function add_stud(k) {
+                    this.kolich += k;
+                    document.write("В группу " + this.n + ' добавили ' + k + ' студентов.<br/>');
+                }
+                this.sub_stud=function sub_stud(k) {
+                    this.kolich -= k;
+                    document.write("Из группы " + this.n + ' убрали ' + k + ' студентов.<br/>')
+                }
+            }
+            gr1=new Gruppa(2, "ИСиТ", 28);
+            gr2=new Gruppa(1, "ИСиТ", 31);
+            gr3=new Gruppa(4, "ПОИТ", 30);
+            gr4=new Gruppa(3, "ИСиТ", 31);
+            gr1.add_stud(6);
+            gr2.sub_stud(4);
+            gr3.add_stud(2);
+            gr4.sub_stud(10);
+            document.write("В группе "+ gr1.spec + gr1.n +" "+ gr1.kolich + " студентов <br/>");  
+            document.write("В группе "+ gr2.spec + gr2.n +" "+ gr2.kolich + " студентов<br/>");
+            document.write("В группе "+ gr3.spec + gr3.n +" "+ gr3.kolich + " студентов<br/>");    
+            document.write("В группе "+ gr4.spec + gr4.n +" "+ gr4.kolich + " студентов<br/>");  
+            if ("n" in gr1)
+            {document.write("В объекте gr1 имеется свойство n<br/>")}
+            document.write("gr1 - Object: "+(gr1 instanceof Object)+"<br/>")
+            document.write("gr1 - Array: "+(gr1 instanceof Array)+"<br/>")
+            document.write("gr1 - String: "+(gr1 instanceof String)+"<br/>")
+
+            function Student(Name, Surname, Phys, MAth, Info) {
+                this.Name = Name;
+                this.Surname = Surname;
+                this.Phys = Phys;
+                this.MAth = MAth;
+                this.Info = Info;      
+                Student.prototype.TypeOfEd=this.TypeOfEd;
+                this.Result = function Result() {
+                    this.Mark = (Phys + MAth + Info)/3;
+                    document.write(this.Name +" "+ this.Surname + " Средний балл: " + this.Mark +" "+ this.TypeOfEd +"<br/>");
+                } 
+            }  
+            stud1 = new Student("Анатолий", "Поборцев", 8, 9, 10);
+            stud2 = new Student("Алексей", "Леонец", 7, 10, 10);
+            stud3 = new Student("Семён", "Натынчик", 9, 8, 9);
+            stud1.TypeOfEd = "Бюджет";
+            stud2.TypeOfEd = "Платное";
+            stud3.TypeOfEd = "Бюджет";
+            stud1.Result();
+            stud2.Result();
+            stud3.Result();
+            
+            //3
+
+            let arr = ["first", "second", "third", "fourth"];
+            document.write("Исходный массив: "+"<br/>");
+            for (i=0; i<=3 ;i++)
+            {
+                document.write(arr[i] + " "+ "<br/> ")
+            }
+            delete arr[3]
+            document.write("Полученный массив:"+"<br/>");
+            for (i=0; i<=3;i++)
+            {
+                document.write(arr[i]+ " "+"<br/>");
+            }
+            if (2 in arr)
+            {
+                document.write("2 элемент в массиве arr существует. <br/>")
+            }
+            if ("Name" in stud1)
+            {
+                document.write("В объекте stud1 имеется свойство Name.<br/>")
+            }
+            document.write("stud1 - Object: "+(stud1 instanceof Object)+"<br/>")
+            document.write("stud1 - Array: "+(stud1 instanceof Array)+"<br/>")
+            document.write("stud1 - String: "+(stud1 instanceof String)+"<br/>")
+            document.write("arr - Object: "+(arr instanceof Object)+"<br/>")
+            document.write("arr - Array: "+(arr instanceof Array)+"<br/>")
+            document.write("arr - String: "+(arr instanceof String)+"<br/>"+"<br/>"+"<br/>")
+            function five() {
+                return 5;                
+            }
+            document.writeln("Тип Student - " + typeof Student + "<br/>");
+            document.writeln("Тип arr - " + typeof arr+"<br/>");
+            document.writeln("Тип Gruppa - " + typeof Gruppa+"<br/>");
+            document.writeln("Тип stud1.Name - " + typeof stud1.Name+"<br/>");
+            document.writeln("Тип stud1.Surname - " + typeof stud1.Surname+"<br/>");
+            document.writeln("Тип stud1.Phys - " + typeof stud1.Phys +"<br/>");
+            document.writeln("Тип stud1.MAth - " + typeof stud1.MAth+"<br/>");
+            document.writeln("Тип stud1.Info - " + typeof stud1.Info+"<br/>");
+            document.writeln("Тип stud1.TypeOfEd - " + typeof stud1.TypeOfEd+"<br/>");
+            document.writeln("Тип gr1.n - " + typeof gr1.n+"<br/>");
+            document.writeln("Тип gr1.kolich - " + typeof gr1.kolich+"<br/>");
+            document.writeln("Тип gr1.spec - " + typeof gr1.spec+"<br/>");
+            document.writeln(typeof five);
+        </script>
+    </body>
+</html>

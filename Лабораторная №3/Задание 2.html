@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <script>
+            var AllMethods = new Array(), MathMethods = new Array(), ArrMethods = new Array();
+            AllMethods[0] = "pow";
+            AllMethods[1] = "pop";
+            AllMethods[2] = "push";
+            AllMethods[3] = "shift";
+            AllMethods[4] = "round";
+            AllMethods[5] = "floor";
+            AllMethods[6] = "slice";
+            AllMethods[7] = "sort";
+            document.writeln("Исходный массив:"+"<br/>")
+            for(i=0;i<AllMethods.length;i++) { document.writeln(AllMethods[i] + "<br/>")}
+            document.writeln("Длина исходного массива:"+AllMethods.length+"<br/>")
+            for (let Method of AllMethods){
+                if (Method == "pow"
+                || Method == "round"
+                || Method == "floor")
+                {
+                    MathMethods.unshift(Method)
+                }
+                if(Method == "pop"
+                || Method == "push"
+                || Method == "shift"
+                || Method == "slice"
+                || Method == "sort") {
+                    ArrMethods.unshift(Method)
+                }
+            }
+            MathMethods.unshift("random")
+            ArrMethods.push("concat")
+            document.writeln("Методы Math:"+"<br/>")
+            for(j=0;j<MathMethods.length;j++){document.writeln(MathMethods[j]+"<br/>")}
+            document.writeln("Длина массива с методами Math:" +MathMethods.length+ "<br/>")
+            document.writeln("Методы Array:"+"<br/>")
+            for(k=0;k<ArrMethods.length;k++){document.writeln(ArrMethods[k]+"<br/>")}
+            document.writeln("Длина массива с методами Array:"+ArrMethods.length+"<br/>")             
+        </script>
+    </body>
+</html>

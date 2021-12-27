@@ -1,0 +1,15 @@
+* {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+input {
+    background-color: crimson;
+    border: black 2px solid;
+    border-radius: 5px;
+}
+
+span {
+    color: seagreen;
+}

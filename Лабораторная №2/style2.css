@@ -1,0 +1,29 @@
+table {
+    background-color: crimson;
+    border: black 2px solid;
+    border-radius: 10px;
+    color: white;
+}
+
+tr td {
+    border:black solid 2px;
+}
+tr td:nth-child(odd){
+    background-color:darkred;
+}
+
+tr:first-child td:first-child {
+    border-radius: 10px 0px 0px 0px;
+}
+
+tr:first-child td:last-child {
+    border-radius: 0px 10px 0px 0px;
+}
+
+tr:last-child td:first-child {
+    border-radius: 0px 0px 0px 10px;
+}
+
+tr:last-child td:last-child {
+    border-radius: 0px 0px 10px 0px;
+}

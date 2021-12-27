@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Задание 1</title>
+        <meta charset="utf-8">
+        <style>
+            img {
+                width: 400px;
+                height: 400px;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>Задание 1</h3>
+        <p id="firstTaskParag">
+            Это пример <span onmouseover="spanSelect()">ТЕКСТА</span>. Это тоже <span onmouseover="spanSelect()">ПРИМЕР</span>.
+        </p>
+        <h3>Задание 2</h3>
+        <p>
+            При наведении на определенные <span onclick="spanScale()" id="id">СЛОВА</span> происходит увеличение шрифта.
+        </p>
+        <h3>Задание 3</h3>
+        <img src="src/les.jpg" onclick="imageChange()" id="myImage"/>
+        <h3>Задание 4</h3>
+        <span onclick="visualizeText()" id="myText">
+            НАЖАТЬ ЗДЕСЬ
+        </span>
+        <h3>Задание 5</h3>
+        <img src="src/zavtrak.jpg" id="focusImage" onmouseover="scaleImage()" onmouseout="unscaleImage()"/>
+        <h3>Задание 6</h3>
+        <p ondblclick="setBorder()" id="parag">
+            Вокруг этого абзаца должна появиться граница.
+        </p>
+        <script src="src/styleScript.js"></script>
+    </body>
+</html>

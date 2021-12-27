@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Задание 1</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style1.css">
+    </head>
+    <body>
+<script>
+    function FirstTask() {
+        alert("Вас приветствует учебный центр")
+        x=prompt("Введите имя",'Имя')
+        alert('Добро подаловать на наши курсы,' + x)
+        y=confirm("Хотите стать Web-дизайнером?")
+        if (y == true) { alert('Учите стили CSS и JavaScript!') };
+        if (y == false) {alert('Упускаете время!')}
+    }
+    function SecondTask() {
+    document.writeln("<span style= 'color:green'>"+ +(92 + 84) + "</span>")
+    document.writeln('92' + '84')
+    document.writeln(22 + '5')
+    document.writeln('22' + 5)
+    alert('Результатом сложения строки и числа всегда будет 225')
+    }
+    function ThirdTask() {
+        x = 8
+        z = 6
+        s1 = (78*x * 36*z)+1;
+        s2 = x * (4 * z - x);
+        result = s1 % s2;
+        document.writeln(result);
+        alert(result);
+    }
+    function FourthTask() {
+        x = prompt('Введите число.');
+        if (((x < 20 || x > 40) && (x != 15)) && x % 5 == 0)  {
+            alert("Правильное значение.")
+        }
+        else
+        {
+            alert("Неправильное значение.")
+        }
+    }
+    function FifthTaskA() {
+        let a = prompt("Введите число А.", [". . ."]);
+        let b = prompt("Введите число Б.", [". . ."]);
+        a = Number(a);
+        b = Number(b);
+        if (a > b) {
+            document.writeln("А больше Б.")
+        }
+        else if (a < b) {
+            document.writeln("Б больше А.")
+        }
+        else {
+            document.writeln("А и Б - равны.")
+        }
+    }
+    function FifthTaskB() {
+        let a = prompt("Введите число А.", [". . ."]);
+        let b = prompt("Введите число Б.", [". . ."]);
+        a = Number(a);
+        b = Number(b);
+        (a!=b)?((a > b) ? document.writeln('А больше Б') : document.writeln('Б больше А')) : document.writeln("А и Б равны.");
+    }
+    function FifthTaskB() {
+        let a = prompt("Введите число А.", [". . ."]);
+        let b = prompt("Введите число Б.", [". . ."]);
+        a = Number(a);
+        b = Number(b);
+        (a!=b)?((a > b) ? document.writeln('А больше Б') : document.writeln('Б больше А')) : document.writeln("А и Б равны.")
+    }
+    function SixthTask() {
+        let month = prompt("Введите любой месяц 2021 года.", [9])
+        let day = prompt("Введите день.", [7]);
+        day = Number(day);
+        month = Number(month);
+        while (day > 7) { day = day - 7 };
+        if (day < 1 && day > 31) {alert('Ошибка')}
+        switch (month) {
+            case 1:
+                switch (day) {
+                    case 1: alert("Пятница"); break;
+                    case 2: alert("Суббота"); break;
+                    case 3: alert("Воскресение"); break;
+                    case 4: alert("Понедельник"); break;
+                    case 5: alert("Вторник"); break;
+                    case 6: alert("Среда"); break;
+                    case 7: alert("Четверг"); break;
+                        break;
+                }
+                break;
+            case 2:
+                switch (day) {
+                    case 1: alert("Понедельник"); break;
+                    case 2: alert("Вторник"); break;
+                    case 3: alert("Среда"); break;
+                    case 4: alert("Четверг"); break;
+                    case 5: alert("Пятница"); break;
+                    case 6: alert("Суббота"); break;
+                    case 7: alert("Воскресение"); break;
+                        break;
+                }
+                break;
+            case 3:
+                switch (day) {
+                    case 1: alert("Понедельник"); break;
+                    case 2: alert("Вторник"); break;
+                    case 3: alert("Среда"); break;
+                    case 4: alert("Четверг"); break;
+                    case 5: alert("Пятница"); break;
+                    case 6: alert("Суббота"); break;
+                    case 7: alert("Воскресение"); break;
+                        break;
+                }
+                break;
+            case 4:
+                switch (day) {
+                    case 1: alert("Четверг"); break;
+                    case 2: alert("Пятница"); break;
+                    case 3: alert("Суббота"); break;
+                    case 4: alert("Воскресение"); break;
+                    case 5: alert("Понедельник"); break;
+                    case 6: alert("Вторник"); break;
+                    case 7: alert("Среда"); break;
+                        break;
+                }
+                break;
+            case 5:
+                switch (day) {
+                    case 1: alert("Суббота"); break;
+                    case 2: alert("Воскресение"); break;
+                    case 3: alert("Понедельник"); break;
+                    case 4: alert("Вторник"); break;
+                    case 5: alert("Среда"); break;
+                    case 6: alert("Четверг"); break;
+                    case 7: alert("Пятница"); break;
+                        break;
+                }
+                break;
+            case 6:
+                switch (day) {
+                    case 1: alert("Вторник"); break;
+                    case 2: alert("Среда"); break;
+                    case 3: alert("Четверг"); break;
+                    case 4: alert("Пятница"); break;
+                    case 5: alert("Суббота"); break;
+                    case 6: alert("Воскресение"); break;
+                    case 7: alert("Понедельник"); break;
+                        break;
+                }
+                break;
+            case 7:
+                switch (day) {
+                    case 1: alert("Четверг"); break;
+                    case 2: alert("Пятница"); break;
+                    case 3: alert("Суббота"); break;
+                    case 4: alert("Воскресение"); break;
+                    case 5: alert("Понедельник"); break;
+                    case 6: alert("Вторник"); break;
+                    case 7: alert("Среда"); break;
+                        break;
+                }
+                break;
+            case 8:
+                switch (day) {
+                    case 1: alert("Воскресение"); break;
+                    case 2: alert("Понедельник"); break;
+                    case 3: alert("Вторник"); break;
+                    case 4: alert("Среда"); break;
+                    case 5: alert("Четверг"); break;
+                    case 6: alert("Пятница"); break;
+                    case 7: alert("Суббота"); break;
+                        break;
+                }
+                break;
+            case 9:
+                switch (day) {
+                    case 1: alert("Среда"); break;
+                    case 2: alert("Четверг"); break;
+                    case 3: alert("Пятница"); break;
+                    case 4: alert("Суббота"); break;
+                    case 5: alert("Воскресение"); break;
+                    case 6: alert("Понедельник"); break;
+                    case 7: alert("Вторник"); break;
+                        break;
+                }
+                break;
+            case 10:
+                switch (day) {
+                    case 1: alert("Пятница"); break;
+                    case 2: alert("Суббота"); break;
+                    case 3: alert("Воскресение"); break;
+                    case 4: alert("Понедельник"); break;
+                    case 5: alert("Вторник"); break;
+                    case 6: alert("Среда"); break;
+                    case 7: alert("Четверг"); break;
+                        break;
+                }
+                break;
+            case 11:
+                switch (day) {
+                    case 1: alert("Понедельник"); break;
+                    case 2: alert("Вторник"); break;
+                    case 3: alert("Среда"); break;
+                    case 4: alert("Четверг"); break;
+                    case 5: alert("Пятница"); break;
+                    case 6: alert("Суббота"); break;
+                    case 7: alert("Воскресение"); break;
+                        break;
+                }
+                break;
+            case 12:
+                switch (day) {
+                    case 1: alert("Среда"); break;
+                    case 2: alert("Четверг"); break;
+                    case 3: alert("Пятница"); break;
+                    case 4: alert("Суббота"); break;
+                    case 5: alert("Воскресение"); break;
+                    case 6: alert("Понедельник"); break;
+                    case 7: alert("Вторник"); break;
+                        break;
+                }
+                break;
+            default:alert("Нет такого месяца.")
+
+        }
+    }
+    function SeventhTask() {
+        let x = prompt("710/x",["Введите x"])
+        try {          
+            if (x == 0) {
+                throw 0;                
+            }
+            alert(710 / x);
+        }
+        catch {
+            alert("Нельзя делить на ноль!!!");
+        }
+    }
+</script>
+<input type="button" value="1 Задание" onclick="FirstTask()"/>
+<input type="button" value="2 Задание" onclick="SecondTask()"/>
+<input type="button" value="3 Задание" onclick="ThirdTask()"/>
+<input type="button" value="4 Задание" onclick="FourthTask()"/>
+<input type="button" value="5a Задание" onclick="FifthTaskA()"/>
+<input type="button" value="5b Задание" onclick="FifthTaskB()"/>
+<input type="button" value="6 Задание" onclick="SixthTask()"/>
+<input type="button" value="7 Задание" onclick="SeventhTask()"/>
+    </body>
+</html>

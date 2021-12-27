@@ -1,0 +1,46 @@
+#nav {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+
+}
+
+#nav .menuItem {
+    text-align: center;
+    flex-basis: 500px;
+    height: 20px;
+    background-color: blanchedalmond;
+    border: 1px black solid;
+    cursor: pointer;
+    transition: ease-out 0.5s ;
+}
+#nav .menuItem:hover{
+    background-color: rgb(231, 201, 118);
+}
+
+#nav .menuItem:first-child {
+    border-radius: 10px 0 0 0;
+}
+
+#nav .menuItem:last-child {
+    border-radius: 0 10px 0 0;
+}
+
+#nav .menuItem .subMenu {
+    background-color: rgb(231, 201, 118);
+    height: 50px;
+    position: relative;
+    top: 3px;
+    display: none;
+    border-radius: 0 0 10px 10px;
+}
+
+
+@keyframes anim{
+    20% {
+        height: 0px;
+    }
+    100% {
+        height: 50px;
+    }
+}

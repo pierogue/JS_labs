@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    </head>
+    <body>
+        <script>
+            var expr = new Array()
+            expr[0] = 6*Math.PI**2 + 3*Math.exp(8)
+            expr[1] = 2*Math.cos(4) + Math.cos(12) + 8*Math.exp(3)
+            expr[2] = 3*Math.sin(9) + Math.log(5) + Math.sqrt(3)
+            expr[3] = 2*Math.tan(5) + 6*Math.PI + Math.sqrt(12)
+            document.writeln("Наибольший элемент массива: " + Math.max(expr[0],expr[1],expr[2],expr[3])+"<br/>");
+            document.writeln("Номер наибольшего элемента массива: " + expr.indexOf(Math.max(expr[0],expr[1],expr[2],expr[3])) + "<br/>")
+            document.writeln("Наименьший элемент массива:" + Math.min(expr[0],expr[1],expr[2],expr[3]) + "<br/>")
+            document.writeln("Номер наименьшего элемента массива:" + expr.indexOf(Math.min(expr[0],expr[1],expr[2],expr[3])) + "<br/>")
+        </script>
+    </body>
+</html>

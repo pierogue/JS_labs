@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Задание 1</title>
+        <meta charset="utf-8">
+        <style>
+            img {
+                width: 400px;
+                height: 400px;
+            }
+            #focusImage{
+                transition: width 1s ease-in;
+            }
+        </style>
+        <script type="text/javascript" src="../jQuery/jquery-3.6.0.js"></script>
+
+        <script type="text/javascript" src="src/styleScript.js"></script>
+    </head>
+    <body>
+        <h3>Задание 1</h3>
+        <p id="firstTaskParag">
+            Это пример <span>ТЕКСТА</span>. Это тоже <span>ПРИМЕР</span>.
+        </p>
+        <h3>Задание 2</h3>
+        <p id="secondTaskParag">
+            При наведении на определенные <span>СЛОВА</span> происходит увеличение шрифта.
+        </p>
+        <h3>Задание 3</h3>
+        <img src="src/les.jpg" id="myImage"/>
+        <h3>Задание 4</h3>
+        <span id="myText">
+            НАЖАТЬ ЗДЕСЬ
+        </span>
+        <h3>Задание 5</h3>
+        <img src="src/zavtrak.jpg" id="focusImage"  onmouseout="unscaleImage()"/>
+        <h3>Задание 6</h3>
+        <p ondblclick="setBorder()" id="parag">
+            Вокруг этого абзаца должна появиться граница.
+        </p>
+
+    </body>
+</html>

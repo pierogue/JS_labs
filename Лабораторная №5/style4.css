@@ -1,0 +1,12 @@
+table, td, th {
+    border: solid black 2px;
+}
+
+table {
+    background-color: crimson;
+    color: gold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    border-radius: 10px;
+}
+

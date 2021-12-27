@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="Style4.css">
+        <title>Задание 4</title>
+    </head>
+    <body>
+        <script>
+            const Date1 = new Date();
+            document.write("<table>")
+                document.write("<tr><td>Год</td><td>"+Date1.getFullYear()+"</td></tr>")
+                document.write("<tr><td>Месяц</td><td>"+Number(Date1.getMonth()+1)+"</td></tr>")
+                document.write("<tr><td>День</td><td>"+Date1.getDate()+"</td></tr>")
+                document.write("<tr><td>Час</td><td>"+Date1.getHours()+"</td></tr>")
+                document.write("<tr><td>Минуты</td><td>"+Date1.getMinutes()+"</td></tr>")
+                document.write("<tr><td>Секунды</td><td>"+Date1.getSeconds()+"</td></tr>")
+            document.write("</table>")        
+        </script>
+    </body>
+</html>

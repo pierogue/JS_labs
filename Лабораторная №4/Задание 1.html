@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Задание 1</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <script>
+            function Gruppa(n, spec, kolich) {
+                this.n = n;
+                this.spec = spec;
+                this.kolich = kolich;
+                this.add_stud = function add_stud(k) {
+                    this.kolich += k;
+                    document.write("В группу " + this.n + ' добавили ' + k + ' студентов.<br/>');
+                }
+                this.sub_stud=function sub_stud(k) {
+                    this.kolich -= k;
+                    document.write("Из группы " + this.n + ' убрали ' + k + ' студентов.<br/>')
+                }
+            }
+            gr1=new Gruppa(2, "ИСиТ", 28);
+            gr2=new Gruppa(1, "ИСиТ", 31);
+            gr3=new Gruppa(4, "ПОИТ", 30);
+            gr4=new Gruppa(3, "ИСиТ", 31);
+            gr1.add_stud(6);
+            gr2.sub_stud(4);
+            gr3.add_stud(2);
+            gr4.sub_stud(10);
+            document.write("В группе "+ gr1.spec + gr1.n +" "+ gr1.kolich + " студентов <br/>");  
+            document.write("В группе "+ gr2.spec + gr2.n +" "+ gr2.kolich + " студентов<br/>");
+            document.write("В группе "+ gr3.spec + gr3.n +" "+ gr3.kolich + " студентов<br/>");    
+            document.write("В группе "+ gr4.spec + gr4.n +" "+ gr4.kolich + " студентов<br/>");  
+            if ("n" in gr1)
+            {document.write("В объекте gr1 имеется свойство n<br/>")}
+            document.write("gr1 - Object: "+(gr1 instanceof Object)+"<br/>")
+            document.write("gr1 - Array: "+(gr1 instanceof Array)+"<br/>")
+            document.write("gr1 - String: "+(gr1 instanceof String)+"<br/>")
+        </script>
+    </body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style2.css">
+        <title>Задание 2</title>
+    </head>
+    <body>
+        <table>
+            <tr><th>Свойство</th><th>Значение</th></tr>
+            <tr><td>Вся информация о браузере</td><td id="res1"></td></tr>
+            <tr><td>Версия браузера</td><td id="res2"></td></tr>
+            <tr><td>Название браузера</td><td id="res3"></td></tr>
+            <tr><td>Кодовое название браузера</td><td id="res4"></td></tr>
+            <tr><td>ОС, которую использует пользователь</td><td id="res5"></td></tr>
+            <tr><td>Включена ли поддержка Java в браузере</td><td id="res6"></td></tr>
+            <tr><td>Ширина и высота экрана</td><td id="res7"></td></tr>
+            <tr><td>Глубина цвета</td><td id="res8"></td></tr>
+            <tr><td>URL, которые были посещены в данном окне браузера</td><td id="res9"></td></tr>
+            <tr><td>URL текущего документа</td><td id="res10"></td></tr>
+            <tr><td>Путь к загруженному документу</td><td id="res11"></td></tr>
+            <tr><td>Имя домена загруженного документа</td><td id="res12"></td></tr>
+        </table>
+
+        <script>
+            document.getElementById("res1").innerText = navigator.userAgent;
+            document.getElementById("res2").innerText = navigator.appVersion;
+            document.getElementById("res3").innerText = navigator.appName;
+            document.getElementById("res4").innerText = navigator.appCodeName;
+            document.getElementById("res5").innerText = navigator.platform;
+            document.getElementById("res6").innerText = navigator.javaEnabled();
+            document.getElementById("res7").innerText = screen.width +" - ширина; "+ screen.height + " - высота.";
+            document.getElementById("res8").innerText = screen.colorDepth;
+            for (let i = 0;i<= History.length;i++){
+                document.getElementById("res9").innerText = History[i];
+            }
+            document.getElementById("res10").innerText = window.location.href;
+            document.getElementById("res11").innerText = window.location.pathname;
+            document.getElementById("res12").innerText = window.location.host;
+        </script>
+    </body>
+</html>

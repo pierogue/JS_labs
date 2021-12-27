@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+
+    <body>
+        <table border="1">
+            <th>Число</th><th>Метод</th><th>Результат</th><th>Описание метода</th>
+            <script>
+                let a=141.546
+                let b=710
+                document.write("<tr><td>"+a+"</td><td>to.Exponential(3)</td><td>"+a.toExponential(3)+"</td><td>Представление числа в экспоненциальной форме с тремя числами после точки.</td></tr>")
+                document.write("<tr><td>"+a+"</td><td>to.fixed(2)</td><td>"+a.toFixed(2)+"</td><td>Представление числа в форме с двумя цифрами после точки.</td></tr>")
+                document.write("<tr><td>"+a+"</td><td>to.Precision(3)</td><td>"+a.toPrecision(3)+"</td><td>Представление числа с тремя числами до и после точки.</td></tr>")
+                document.write("<tr><td>"+a+"</td><td>to.String(2)</td><td>"+a.toString(2)+"</td><td>Строковое представление числа в двоичной системе счисления.</td></tr>")
+                document.write("<tr><td>"+b+"</td><td>to.Exponential(3)</td><td>"+b.toExponential(2)+"</td><td>Представление числа в экспоненциальной форме с двумя числами после точки.</td></tr>")
+                document.write("<tr><td>"+b+"</td><td>to.fixed(2)</td><td>"+b.toFixed(1)+"</td><td>Представление числа в форме с одной цифрой после точки.</td></tr>")
+                document.write("<tr><td>"+b+"</td><td>to.Precision(2)</td><td>"+b.toPrecision(2)+"</td><td>Представление числа с двумя числами до и после точки.</td></tr>")
+                document.write("<tr><td>"+b+"</td><td>to.String(16)</td><td>"+b.toString(16)+"</td><td>Строковое представление числа в шестнадцатеричной системе счисления.</td></tr>")
+            </script>
+        </table>
+    </body>
+</html>
